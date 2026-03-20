@@ -1,4 +1,4 @@
-/* ─── ACCOMPLISHMENTS GRID ─── */
+ /* ─── ACCOMPLISHMENTS GRID ─── */
     .accomplishments-title {
       text-align: center;
       margin-bottom: 3.5rem;
@@ -60,4 +60,41 @@
       line-height: 1.7;
       color: var(--white-dim);
       font-weight: 300;
+    }
+
+    /* ─── SERVICES STRIP ─── */
+    #services {
+      background: var(--gold);
+      padding: 3rem 0;
+      overflow: hidden;
+    }
+    .services-strip {
+      display: flex;
+      gap: 4rem;
+      white-space: nowrap;
+      animation: marquee 20s linear infinite;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .strip-item {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-shrink: 0;
+    }
+    .strip-dot {
+      width: 5px;
+      height: 5px;
+      background: var(--black);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .strip-item span {
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--black);
+      font-weight: 600;
     }

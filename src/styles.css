@@ -1,4 +1,4 @@
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
       --gold: #C9A84C;
@@ -21,8 +21,7 @@
       font-family: var(--font-body);
       overflow-x: hidden;
     }
-
-     /* ─── DIVIDER ─── */
+   /* ─── DIVIDER ─── */
     .gold-divider {
       display: flex;
       align-items: center;
