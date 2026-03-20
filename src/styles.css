@@ -1,0 +1,46 @@
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C97A;
+      --gold-dim: #8a6f30;
+      --black: #080808;
+      --black-soft: #111111;
+      --black-card: #151515;
+      --white: #F5F0E8;
+      --white-dim: #b0a99a;
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      overflow-x: hidden;
+    }
+
+     /* ─── DIVIDER ─── */
+    .gold-divider {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 0 4rem;
+      margin: 4rem 0;
+    }
+    .gold-divider::before, .gold-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold-dim));
+    }
+    .gold-divider::after {
+      background: linear-gradient(to left, transparent, var(--gold-dim));
+    }
+    .gold-divider-icon {
+      color: var(--gold);
+      font-size: 1rem;
+      letter-spacing: 0.4em;
+    }
